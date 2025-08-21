@@ -59,5 +59,14 @@ GROUP BY customer_segment
 GROUP BY customer_segment;
 ORDER BY total_customers DESC;
 ```
+## Summary Table Of Insights
+
+| Customer\_Segment | Total\_Customers |
+| ----------------- | ---------------- |
+| New               | 14,631           |
+| Regular           | 2,198            |
+| VIP               | 1,655            |
+- 
+
 
 
