@@ -1,11 +1,17 @@
 # Customer Segmentation
 
+This project involves customer segmentation using SQL to categorize users based on their spending behavior and customer lifespan. 
+The objective was to group customers into meaningful segments for better business insights and decision-making.
 
-/* Group customers into three segments based on their spending behaviours 
-- VIP : Customers with atleast 12 months of history and spending more than $5000.
-- Regular: Customers with atleast 12months of history but spending $ 5000 or less.
-- New : Customers with a lifespan less than 12 months.
-- And Find The Total Number Of Customers By Each Group
+Using transactional and customer data, the analysis segments customers into three categories:
+
+VIP – Customers with at least 12 months of activity and total spending greater than $5,000.
+
+Regular – Customers with at least 12 months of activity but total spending of $5,000 or less.
+
+New – Customers with less than 12 months of history.
+
+After segmenting, the query calculates the total number of customers in each group, enabling quick insight into the distribution of customer types.
 */
 WITH customer_spending AS (
 SELECT 
