@@ -91,7 +91,7 @@ ORDER BY total_customers DESC;
 - **CTEs** – Structured queries with `WITH` statements for clarity.  
 - **Data Cleaning & Accuracy** – Ensured consistent grouping and calculations.  
 - **Business Intelligence** – Translated raw data into customer lifecycle insights.
-## Tools & Technologies Used
+## Tools & Technologies
 - SQL (PostgreSQL)
 - Excel / CSV (for data handling)
 - GitHub (Version Control & Portfolio Presentation)
