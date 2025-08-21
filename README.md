@@ -70,7 +70,7 @@ ORDER BY total_customers DESC;
 - New customers dominate the dataset (over 70%), suggesting strong acquisition but potential retention challenges.
 - Regular customers are limited, which might indicate drop-offs before loyalty is built.
 - VIP customers are the smallest group, but nurturing them could generate higher revenue per customer.
-  ## Recommendations & Next Moves
+## Recommendations & Next Moves
 -  Retention Programs for New Customers: Launch welcome campaigns and onboarding journeys to convert new customers into regulars.
 Offer first-purchase discounts, email nurturing, and app notifications to reduce churn risk.
 - Loyalty Programs for Regular Customers:Introduce point-based rewards or tier upgrades to encourage repeat purchases.
