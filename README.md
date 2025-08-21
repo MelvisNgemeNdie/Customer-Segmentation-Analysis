@@ -71,7 +71,7 @@ ORDER BY total_customers DESC;
 - Regular customers are limited, which might indicate drop-offs before loyalty is built.
 - VIP customers are the smallest group, but nurturing them could generate higher revenue per customer.
   ## Recommendations & Next Moves
-  - Retention Programs for New Customers
+-  Retention Programs for New Customers
 
 Launch welcome campaigns and onboarding journeys to convert new customers into regulars.
 
