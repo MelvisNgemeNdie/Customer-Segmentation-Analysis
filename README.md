@@ -3,12 +3,11 @@
 ## Project Overview
 This project involves customer segmentation based on their spending behavior and customer lifetime.
 Using SQL, customers are grouped into three distinct segments:
+- VIP: Customers with at least 12 months of transaction history and total spending over $5,000.
 
-##### . VIP: Customers with at least 12 months of transaction history and total spending over $5,000.
+- Regular:Customers with at least 12 months of history but total spending of $5,000 or less.
 
-##### . Regular:Customers with at least 12 months of history but total spending of $5,000 or less.
-
-##### . New: Customers with less than 12 months of activity.
+- New: Customers with less than 12 months of activity.
 
 ## Objective
 The objective is to classify each customer into one of these categories and compute the total number of customers in each segment. 
