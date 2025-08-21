@@ -66,7 +66,10 @@ ORDER BY total_customers DESC;
 | New               | 14,631           |
 | Regular           | 2,198            |
 | VIP               | 1,655            |
-- 
+
+- New customers dominate the dataset (over 70%), suggesting strong acquisition but potential retention challenges.
+- Regular customers are limited, which might indicate drop-offs before loyalty is built.
+- VIP customers are the smallest group, but nurturing them could generate higher revenue per customer.
 
 
 
