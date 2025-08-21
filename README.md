@@ -15,6 +15,7 @@ This segmentation can support targeted marketing strategies, customer value anal
 
 ## SQL Queries
 ```sql
+/* Computing the lifespans for each customer */
 WITH customer_spending AS (
 SELECT 
 c.customer_key,
@@ -28,6 +29,7 @@ ON f.customer_key = c.customer_key
 GROUP BY c.customer_key
 )
 
+/* Find the total number of customers by each group */
 SELECT 
 customer_key,
 total_spending,
@@ -35,5 +37,28 @@ lifespans,
 CASE WHEN lifespans >= 12 AND total_spending > 5000 THEN 'VIP'
      WHEN lifespans >= 12 AND total_spending <= 5000 THEN 'Regular'
 	 ELSE 'New'
-END AS customer_segment
+END AS customer_segment,
+COUNT (customer_key) AS total_customers
 FROM customer_spending
+GROUP BY customer_segment;
+
+/* Categorising the total customers to each  customer segment */
+SELECT
+customer_segment,
+COUNT(customer_key) AS total)customers
+
+FROM (
+SELECT
+customer_key,
+CASE WHEN lifespans >= 12 AND total_spending > 5000 THEN 'VIP'
+     WHEN lifespans >= 12 AND total_spending <= 5000 THEN 'Regular'
+	 ELSE 'New'
+END AS customer_segment
+FROM customer_spending) AS t
+GROUP BY customer_segment
+ORDER BY total_customers DESC;
+```
+
+GROUP BY customer_segment;
+
+
