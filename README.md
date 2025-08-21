@@ -84,16 +84,10 @@ ORDER BY total_customers DESC;
 - Continuously track how customers move between segments (e.g., New → Regular → VIP).
 - Use churn prediction models to flag customers at risk of dropping off early.
 ## Skills Highlighted
-- SQL Joins & Data Integration – Combined multiple tables using LEFT JOIN.
-
-- Aggregate Functions – SUM, MIN, MAX, COUNT for customer KPIs.
-
-- Date Functions – Used AGE() & EXTRACT() to compute customer lifespans.
-
-- Conditional Logic – Applied CASE statements for customer segmentation.
-- CTEs – Structured queries with WITH statements for clarity.
-
-- Data Cleaning & Accuracy – Ensured consistent grouping and calculations.
-
-- Business Intelligence – Translated data into customer lifecycle insights.
-
+- **SQL Joins & Data Integration** – Combined multiple tables using `LEFT JOIN`.  
+- **Aggregate Functions** – Applied `SUM()`, `MIN()`, `MAX()`, `COUNT()` for customer KPIs.  
+- **Date Functions** – Used `AGE()` & `EXTRACT()` to compute customer lifespans.  
+- **Conditional Logic** – Applied `CASE WHEN` statements for customer segmentation.  
+- **CTEs** – Structured queries with `WITH` statements for clarity.  
+- **Data Cleaning & Accuracy** – Ensured consistent grouping and calculations.  
+- **Business Intelligence** – Translated raw data into customer lifecycle insights.  
