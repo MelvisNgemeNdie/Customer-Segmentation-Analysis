@@ -90,4 +90,8 @@ ORDER BY total_customers DESC;
 - **Conditional Logic** – Applied `CASE WHEN` statements for customer segmentation.  
 - **CTEs** – Structured queries with `WITH` statements for clarity.  
 - **Data Cleaning & Accuracy** – Ensured consistent grouping and calculations.  
-- **Business Intelligence** – Translated raw data into customer lifecycle insights.  
+- **Business Intelligence** – Translated raw data into customer lifecycle insights.
+## Tools & Technologies Used
+- SQL (PostgreSQL)
+- Excel / CSV (for data handling)
+- GitHub (Version Control & Portfolio Presentation)
