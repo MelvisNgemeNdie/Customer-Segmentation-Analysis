@@ -1,4 +1,4 @@
-## Customer Segmentation
+## Customer Segmentation Analysis
 
 ### Project Overview
 This project involves customer segmentation based on their spending behavior and customer lifetime.
