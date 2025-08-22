@@ -1,6 +1,6 @@
-# Customer Segmentation
+## Customer Segmentation
 
-## Project Overview
+### Project Overview
 This project involves customer segmentation based on their spending behavior and customer lifetime.
 Using SQL, customers are grouped into three distinct segments:
 - **VIP**: Customers with at least 12 months of transaction history and total spending over $5,000.
@@ -9,11 +9,11 @@ Using SQL, customers are grouped into three distinct segments:
 
 - **New**: Customers with less than 12 months of activity.
 
-## Objective
+### Objective
 The objective is to classify each customer into one of these categories and compute the total number of customers in each segment. 
 This segmentation can support targeted marketing strategies, customer value analysis, and retention planning.
 
-## SQL Queries
+### SQL Queries
 ```sql
 /* Computing the lifespans for each customer */
 WITH customer_spending AS (
@@ -59,7 +59,7 @@ GROUP BY customer_segment
 GROUP BY customer_segment;
 ORDER BY total_customers DESC;
 ```
-## Summary Table Of Insights
+### Summary Table Of Insights
 
 | Customer\_Segment | Total\_Customers |
 | ----------------- | ---------------- |
@@ -70,7 +70,7 @@ ORDER BY total_customers DESC;
 - New customers dominate the dataset (over 70%), suggesting strong acquisition but potential retention challenges.
 - Regular customers are limited, which might indicate drop-offs before loyalty is built.
 - VIP customers are the smallest group, but nurturing them could generate higher revenue per customer.
-## Recommendations & Next Moves
+### Recommendations & Next Moves
 #### Retention Programs for New Customers
 - Launch welcome campaigns and onboarding journeys to convert new customers into regulars.
 - Offer first-purchase discounts, email nurturing, and app notifications to reduce churn risk.
@@ -83,7 +83,7 @@ ORDER BY total_customers DESC;
 #### Customer Lifecycle Monitoring
 - Continuously track how customers move between segments (e.g., New → Regular → VIP).
 - Use churn prediction models to flag customers at risk of dropping off early.
-## Skills Highlighted
+### Skills Highlighted
 - **SQL Joins & Data Integration** – Combined multiple tables using `LEFT JOIN`.  
 - **Aggregate Functions** – Applied `SUM()`, `MIN()`, `MAX()`, `COUNT()` for customer KPIs.  
 - **Date Functions** – Used `AGE()` & `EXTRACT()` to compute customer lifespans.  
@@ -91,7 +91,7 @@ ORDER BY total_customers DESC;
 - **CTEs** – Structured queries with `WITH` statements for clarity.  
 - **Data Cleaning & Accuracy** – Ensured consistent grouping and calculations.  
 - **Business Intelligence** – Translated raw data into customer lifecycle insights.
-## Tools & Technologies
+### Tools & Technologies
 - SQL (PostgreSQL)
 - Excel / CSV (for data handling)
 - GitHub (Version Control & Portfolio Presentation)
