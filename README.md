@@ -49,11 +49,13 @@ ORDER BY total_customers DESC;
 ```
 ### Summary Table Of Insights
 
-| Customer\_Segment | Total\_Customers |
-| ----------------- | ---------------- |
-| New               | 14,828          |
-| Regular           | 2,037            |
-| VIP               | 1,619            |
+| Customer\_ Group | Total\_ Customers | % of Total (\~18.5K) |
+| --------------   | ---------------   | -------------------- |
+| **New**          | 14,828            | \~80%                |
+| **Regular**      | 2,037             | \~11%                |
+| **VIP**          | 1,619             | \~9%                 |
+
+
 
 - 80% (14,828) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
