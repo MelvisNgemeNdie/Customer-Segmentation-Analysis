@@ -47,15 +47,17 @@ GROUP BY customer_group
 ORDER BY total_customers DESC;
 
 /* What this does */
-- customer_summary CTE
-- Calculates each customer’s total_spend.
-- Finds their lifespan_months (difference between first and last order date).
-- customer_segments CTE
+customer_spending CTE
+- Calculates each customer’s total_spending.
+- Finds their lifespans (difference between first and last order date).
+
+customer_segments CTE
 - Applies your rules with a CASE statement.
 
 Final SELECT
 - Groups by segment (VIP, Regular, New).
 - Counts customers in each.
+
 ```
 ### Summary Table Of Insights
 
@@ -65,11 +67,10 @@ Final SELECT
 | **Regular**      | 2,037             | \~11%                |
 | **VIP**          | 1,619             | \~9%                 |
 
-
-
 - 80% (14,828) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
 - 9% (1,619) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
+
 ### Recommendations & Next Moves
 #### Retention Programs for New Customers
 - Launch welcome campaigns and onboarding journeys to convert new customers into regulars.
