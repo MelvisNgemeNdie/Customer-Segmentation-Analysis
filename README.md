@@ -17,14 +17,16 @@ c.customer_key,
 SUM(f.sales_amount) AS total_spending,
 MIN(f.order_date) AS first_order,
 MAX(f.order_date)AS last_order,
-EXTRACT(month FROM  AGE(MAX(f.order_date), MIN(f.order_date)))  AS lifespans
+EXTRACT(YEAR FROM AGE(MAX(order_date), MIN(order_date))) * 12 +
+        EXTRACT(MONTH FROM AGE(MAX(order_date), MIN(order_date))) AS lifespans
 FROM public."gold.fact_sales" AS f
 LEFT JOIN public."gold.dim_customers" AS c
 ON f.customer_key = c.customer_key
 GROUP BY c.customer_key
-)
+),
 
 /* Find the total number of customers by each group */
+customer_segment AS (
 SELECT 
 customer_key,
 total_spending,
@@ -32,35 +34,26 @@ lifespans,
 CASE WHEN lifespans >= 12 AND total_spending > 5000 THEN 'VIP'
      WHEN lifespans >= 12 AND total_spending <= 5000 THEN 'Regular'
 	 ELSE 'New'
-END AS customer_segment,
-COUNT (customer_key) AS total_customers
+END AS customer_group
 FROM customer_spending
-GROUP BY customer_segment;
-
+)
 /* Categorising the total customers to each  customer segment */
-SELECT
-customer_segment,
-COUNT(customer_key) AS total)customers
 
-FROM (
 SELECT
-customer_key,
-CASE WHEN lifespans >= 12 AND total_spending > 5000 THEN 'VIP'
-     WHEN lifespans >= 12 AND total_spending <= 5000 THEN 'Regular'
-	 ELSE 'New'
-END AS customer_segment
-FROM customer_spending) AS t
-GROUP BY customer_segment
-GROUP BY customer_segment;
+    customer_group,
+    COUNT(*) AS total_customers
+FROM customer_segment
+GROUP BY customer_group
 ORDER BY total_customers DESC;
+
 ```
 ### Summary Table Of Insights
 
 | Customer\_Segment | Total\_Customers |
 | ----------------- | ---------------- |
-| New               | 14,631           |
-| Regular           | 2,198            |
-| VIP               | 1,655            |
+| New               | 14,828          |
+| Regular           | 2,037            |
+| VIP               | 1,619            |
 
 - New customers dominate the dataset (over 70%), suggesting strong acquisition but potential retention challenges.
 - Regular customers are limited, which might indicate drop-offs before loyalty is built.
