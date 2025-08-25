@@ -51,7 +51,7 @@ customer_spending CTE
 - Calculates each customer’s total_spending.
 - Finds their lifespans (difference between first and last order date).
 
-customer_segments CTE
+customer_segment CTE
 - Applies your rules with a CASE statement.
 
 Final SELECT
