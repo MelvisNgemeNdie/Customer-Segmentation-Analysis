@@ -46,6 +46,16 @@ FROM customer_segment
 GROUP BY customer_group
 ORDER BY total_customers DESC;
 
+/* What this does */
+- customer_summary CTE
+- Calculates each customer’s total_spend.
+- Finds their lifespan_months (difference between first and last order date).
+- customer_segments CTE
+- Applies your rules with a CASE statement.
+
+Final SELECT
+- Groups by segment (VIP, Regular, New).
+- Counts customers in each.
 ```
 ### Summary Table Of Insights
 
