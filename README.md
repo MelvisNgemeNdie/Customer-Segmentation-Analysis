@@ -61,7 +61,7 @@ ORDER BY total_customers DESC;
 ```
 ### Summary Table Of Insights
 
-| Customer\_ Group | Total\_ Customers | % of Total (\~18.5K) |
+| Customer\_ Group | Total\_ Customers | % of Total (\~18.2K) |
 | --------------   | ---------------   | -------------------- |
 | **New**          | 14,466            | \~80%                |
 | **Regular**      | 2,037             | \~11%                |
