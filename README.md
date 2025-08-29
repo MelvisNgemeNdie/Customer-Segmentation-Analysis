@@ -67,7 +67,7 @@ ORDER BY total_customers DESC;
 | **Regular**      | 2,037             | \~11%                |
 | **VIP**          | 1,612             | \~9%                 |
 ``` sql
-<img src="images/customer_segmentation_dashboard.png" alt="Customer Segmentation Dashboard" width="600"/>
+<img src="images/customer_segmentation_dashboard.PNG" alt="Customer Segmentation Dashboard" width="600"/>
 ```
 
 - 80% (14,466) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
