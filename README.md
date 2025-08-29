@@ -66,10 +66,9 @@ ORDER BY total_customers DESC;
 | **New**          | 14,466            | \~80%                |
 | **Regular**      | 2,037             | \~11%                |
 | **VIP**          | 1,612             | \~9%                 |
-``` sql
+
 ![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
 
-```
 
 - 80% (14,466) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
