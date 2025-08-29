@@ -71,6 +71,9 @@ ORDER BY total_customers DESC;
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
 - 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
 
+  ![Customer Segmentation Dashboard](customer_segmentation_dashboard.png)
+
+
 ### Recommendations & Next Moves
 #### Retention Programs for New Customers
 - Launch welcome campaigns and onboarding journeys to convert new customers into regulars.
