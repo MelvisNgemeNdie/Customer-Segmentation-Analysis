@@ -67,9 +67,9 @@ ORDER BY total_customers DESC;
 | **Regular**      | 2,037             | \~11%                |
 | **VIP**          | 1,612             | \~9%                 |
 
-- 80% (14,828) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
+- 80% (14,466) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
-- 9% (1,619) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
+- 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
 
 ### Recommendations & Next Moves
 #### Retention Programs for New Customers
