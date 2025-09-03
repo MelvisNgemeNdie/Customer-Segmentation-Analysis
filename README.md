@@ -10,7 +10,7 @@ Using SQL, customers are grouped into three distinct segments:
 ---
 
 
-### Objective
+### The Problem
 The objective is to classify each customer into one of these categories and compute the total number of customers in each segment. 
 This segmentation can support targeted marketing strategies, customer value analysis, and retention planning.
 
