@@ -85,7 +85,7 @@ ORDER BY total_customers DESC;
 
 ---
 
-## Dashboard Preview
+### Dashboard Preview
 
 ![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
 
@@ -106,6 +106,10 @@ ORDER BY total_customers DESC;
 #### Customer Lifecycle Monitoring
 - Continuously track how customers move between segments (e.g., New → Regular → VIP).
 - Use churn prediction models to flag customers at risk of dropping off early.
+
+---
+
+
 ### Skills Highlighted
 - **SQL Joins & Data Integration** – Combined multiple tables using `LEFT JOIN`.  
 - **Aggregate Functions** – Applied `SUM()`, `MIN()`, `MAX()`, `COUNT()` for customer KPIs.  
