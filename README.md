@@ -82,7 +82,10 @@ ORDER BY total_customers DESC;
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
 - 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
 
+
 ---
+
+## Dashboard Preview
 
 
 
