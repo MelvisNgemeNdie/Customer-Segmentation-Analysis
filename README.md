@@ -122,3 +122,5 @@ ORDER BY total_customers DESC;
 - SQL (PostgreSQL)
 - Excel / CSV (for data handling)
 - GitHub (Version Control & Portfolio Presentation)
+
+---
