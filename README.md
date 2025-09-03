@@ -5,9 +5,18 @@ Using SQL, customers are grouped into three distinct segments:
 - **VIP**: Customers with at least 12 months of transaction history and total spending over $5,000.
 - **Regula**r:Customers with at least 12 months of history but total spending of $5,000 or less.
 - **New**: Customers with less than 12 months of activity.
+
+
+---
+
+
 ### Objective
 The objective is to classify each customer into one of these categories and compute the total number of customers in each segment. 
 This segmentation can support targeted marketing strategies, customer value analysis, and retention planning.
+
+---
+
+
 ### SQL Queries
 ```sql
 /* Computing the lifespans for each customer */
@@ -58,6 +67,10 @@ ORDER BY total_customers DESC;
 - Groups by segment (VIP, Regular, New).
 - Counts customers in each.
 ```
+
+---
+
+
 ### Summary Table Of Insights
 | Customer\_ Group | Total\_ Customers | % of Total (\~18.2K) |
 | --------------   | ---------------   | -------------------- |
@@ -69,7 +82,15 @@ ORDER BY total_customers DESC;
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
 - 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
 
+---
+
+
+
 ![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
+
+
+---
+
 
 ### Recommendations & Next Moves
 #### Retention Programs for New Customers
@@ -92,6 +113,10 @@ ORDER BY total_customers DESC;
 - **CTEs** – Structured queries with `WITH` statements for clarity.  
 - **Data Cleaning & Accuracy** – Ensured consistent grouping and calculations.  
 - **Business Intelligence** – Translated raw data into customer lifecycle insights.
+
+---
+
+
 ### Tools & Technologies
 - SQL (PostgreSQL)
 - Excel / CSV (for data handling)
