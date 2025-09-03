@@ -86,9 +86,6 @@ ORDER BY total_customers DESC;
 ---
 
 ## Dashboard Preview
----
-
-
 
 ![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
 
