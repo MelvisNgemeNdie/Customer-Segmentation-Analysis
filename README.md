@@ -69,7 +69,6 @@ ORDER BY total_customers DESC;
 
 ---
 
-
 ### Summary Table Of Insights
 | Customer\_ Group | Total\_ Customers | % of Total (\~18.2K) |
 | --------------   | ---------------   | -------------------- |
@@ -80,13 +79,6 @@ ORDER BY total_customers DESC;
 - 80% (14,466) of customers are New (<12 months lifespan) suggesting strong acquisition but low retention.
 - 11% (2,037) are Regulars (≤ €5000 spend, ≥12 months) suggesting stable but low-value long-term base.
 - 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
-
-
----
-
-### Dashboard Preview
-![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
-
 
 ---
 
@@ -107,7 +99,6 @@ ORDER BY total_customers DESC;
 
 ---
 
-
 ### Skills Highlighted
 - **SQL Joins & Data Integration** – Combined multiple tables using `LEFT JOIN`.  
 - **Aggregate Functions** – Applied `SUM()`, `MIN()`, `MAX()`, `COUNT()` for customer KPIs.  
@@ -119,10 +110,15 @@ ORDER BY total_customers DESC;
 
 ---
 
-
 ### Tools & Technologies
 - SQL (PostgreSQL)
 - Excel / CSV (for data handling)
 - GitHub (Version Control & Portfolio Presentation)
 
 ---
+
+### Dashboard Preview
+![Customer Segmentation Dashboard](customer_segmentation_dashboard.PNG)
+
+---
+
