@@ -123,7 +123,7 @@ ORDER BY total_customers DESC;
 ---
 
 ### Key Takeaway
-The analysis reveals that **80% of customers are New**, indicating strong acquisition but weak progression to long-term, high-value relationships.  
+- The analysis reveals that **80% of customers are New**, indicating strong acquisition but weak progression to long-term, high-value relationships.  
 - **Retention** is the biggest challenge — most customers churn before reaching Regular or VIP status.  
 - **Revenue growth potential** lies in converting New → Regular and nurturing Regular → VIP through targeted loyalty and engagement programs.
 
