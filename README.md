@@ -6,15 +6,13 @@ Using SQL, customers are grouped into three distinct segments:
 - **Regula**r:Customers with at least 12 months of history but total spending of $5,000 or less.
 - **New**: Customers with less than 12 months of activity.
 
-
 ---
+
 ### The Problem
 The objective is to classify each customer into one of these categories and compute the total number of customers in each segment. 
 This segmentation can support targeted marketing strategies, customer value analysis, and retention planning.
 
-
 ---
-
 
 ### SQL Queries
 ```sql
@@ -81,7 +79,6 @@ ORDER BY total_customers DESC;
 - 9% (1,612) are VIPs (> €5000 spend, ≥12 months) suggesting high-value customers, critical to overall revenue despite being the smallest segment.
 
 ---
-
 
 ### Recommendations & Next Moves
 #### Retention Programs for New Customers
